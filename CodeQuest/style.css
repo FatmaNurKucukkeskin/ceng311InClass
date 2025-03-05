@@ -1,0 +1,125 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif; /* Sets the main font for the website */
+    background: linear-gradient(135deg, #2a5298, #1e3c72); /* Gradient background for a modern look */
+    color: #fff; /* White text color */
+    text-align: center; /* Centers text content */
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Arranges child elements vertically */
+    justify-content: space-between; /* Distributes content evenly */
+}
+
+/* Header Styling */
+header {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 20px 0; /* Adds vertical padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Shadow effect for depth */
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 2em; /* Large text size */
+    font-weight: 600; /* Bold font weight */
+    color: #f39c12; /* Orange color for the logo */
+    text-transform: uppercase; /* Converts text to uppercase */
+    letter-spacing: 2px; /* Adds space between letters */
+}
+
+/* Navigation Bar */
+.navbar {
+    list-style: none; /* Removes default list styling */
+    display: flex;
+    justify-content: center; /* Centers nav items horizontally */
+    margin-top: 10px; /* Adds margin above navbar */
+}
+
+.navbar li {
+    margin: 0 20px; /* Adds space between nav items */
+}
+
+.navbar li a {
+    text-decoration: none; /* Removes underline */
+    color: #f39c12; /* Orange color for links */
+    font-weight: 500; /* Medium font weight */
+    font-size: 1.2em; /* Slightly larger text size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar li a:hover {
+    color: #e67e22; /* Darker orange color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Game Container Styling */
+.game-container {
+    padding: 50px; /* Adds padding around content */
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out; /* Fade-in animation */
+}
+
+.game-container h1 {
+    font-size: 2.5em; /* Large heading size */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.game-container p {
+    margin-bottom: 20px; /* Space below paragraph */
+    font-size: 1.2em; /* Slightly larger paragraph text */
+}
+
+/* Textarea Styling */
+textarea {
+    width: 80%; /* Makes textarea take most of the container width */
+    padding: 10px; /* Padding inside textarea */
+    margin-bottom: 20px; /* Space below textarea */
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1.1em; /* Text size */
+    outline: none; /* Removes focus outline */
+}
+
+/* Button Styling */
+button {
+    padding: 10px 30px; /* Button padding */
+    background: #f39c12; /* Orange background */
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    color: white; /* White text */
+    font-size: 1.2em; /* Larger button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease-in-out; /* Smooth background transition */
+}
+
+button:hover {
+    background: #e67e22; /* Darker orange on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Footer Styling */
+footer {
+    padding: 20px; /* Padding inside footer */
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero Image Styling */
+.hero-image {
+    width: 100%; /* Makes image responsive */
+    max-width: 300px; /* Maximum image width */
+    height: auto; /* Keeps aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below image */
+}
